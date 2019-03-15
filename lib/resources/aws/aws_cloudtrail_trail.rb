@@ -41,7 +41,7 @@ class AwsCloudTrailTrail < Inspec.resource(1)
     end
   end
 
-  def is_logging?
+  def logging?
     query = { name: @trail_name }
     catch_aws_errors do
       begin

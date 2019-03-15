@@ -97,9 +97,9 @@ class AwsCloudTrailTrailPropertiesTest < Minitest::Test
   end
 
   def test_property_is_logging
-    assert_equal(true, AwsCloudTrailTrail.new('test-trail-1').is_logging?)
-    assert_equal(false, AwsCloudTrailTrail.new('test-trail-2').is_logging?)
-    assert_nil(AwsCloudTrailTrail.new(trail_name: 'non-existant').is_logging?)
+    assert_equal(true, AwsCloudTrailTrail.new('test-trail-1').logging?)
+    assert_equal(false, AwsCloudTrailTrail.new('test-trail-2').logging?)
+    assert_nil(AwsCloudTrailTrail.new(trail_name: 'non-existant').logging?)
   end
 end
 
